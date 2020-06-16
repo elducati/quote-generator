@@ -25,11 +25,12 @@
   <!-- Start your project here-->
   <div style="height: 100vh">
     <div class="flex-center flex-column">
-      <h1 class="text-hide animated fadeIn mb-4"
-        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
-        MDBootstrap</h1>
-      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-      <p class="animated fadeIn text-muted">MDB Team</p>
+      <h1 class="animated fadeIn mb-4">
+        Quotation Generator</h1>
+      <div id="quote-display">
+
+      </div>
+      <button onclick="newQuote()">New Quote</button>
     </div>
   </div>
   <!-- End your project here-->
@@ -43,20 +44,8 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="quote.js"></script>
 
 </body>
 
 </html>
-<script>
- const quoteGenerator = () => {
-  let begin = ["To live is to suffer", "He who", "That which"];
-  let middle = ["to survive is to find","has a why to live ","does not kill us"];
-  let end = ["some meaning in the suffering.","can bear almost any how.","makes us stronger."];
-  
-  for(let i in end){
-  console.log(begin[i] + ' ' + middle[i] + ' ' + end[i] + '.');
-}
-}
-quoteGenerator();
-</script>
