@@ -24,13 +24,32 @@
 
   <!-- Start your project here-->
   <div style="height: 100vh">
-    <div class="flex-center flex-column">
+    <div class="container border border-success rounded-pill flex-center flex-column">
       <h1 class="animated fadeIn mb-4">
         Quotation Generator</h1>
-      <div id="quote-display">
+      <div id="quote-display" class="border border-success">
 
       </div>
-      <button onclick="newQuote()">New Quote</button>
+      <div class="container row">
+      <!--Dropdown primary-->
+      <div class="dropdown col-md-6">
+
+        <!--Trigger-->
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Dropdown primary</button>
+
+
+        <!--Menu-->
+        <div class="dropdown-menu dropdown-primary">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <!--/Dropdown primary-->
+      <div class="col-md-6"><button class="btn-success float-right" onclick="newQuote()">New Quote</button></div>
+    </div>
     </div>
   </div>
   <!-- End your project here-->
