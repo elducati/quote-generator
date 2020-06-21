@@ -7,7 +7,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Quotation Generator</title>
   <!-- MDB icon -->
+<<<<<<< HEAD
   <link rel="icon" href="" type="image/x-icon">
+=======
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+>>>>>>> acac66b79938c1619b69b1742daed5b9d9a1def1
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -24,12 +28,31 @@
 
   <!-- Start your project here-->
   <div style="height: 100vh">
-    <div class="flex-center flex-column">
+    <div class="container border border-success rounded-pill flex-center flex-column">
       <h1 class="animated fadeIn mb-4">
-        Quotation Generator
-        </h1>
-      <div id="quote-display"></div>
-      <button onclick="newQuote()">New Quote</button>
+        Quotation Generator</h1>
+      <div id="quote-display" class="border border-success">
+
+      </div>
+      <div class="container row">
+      <!--Dropdown primary-->
+      <div class="dropdown col-md-6">
+
+        <!--Trigger-->
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Select Quote Category</button>
+
+
+        <!--Menu-->
+        <div class="dropdown-menu dropdown-primary">
+          <a class="dropdown-item" href="#">Nietzsche Quotes</a>
+          <a class="dropdown-item" href="#">Popular Quotes</a>
+          <a class="dropdown-item" href="#">Morning Quotes</a>          
+        </div>
+      </div>
+      <!--/Dropdown primary-->
+      <div class="col-md-6"><button class="btn-success float-right" onclick="newQuote()">New Quote</button></div>
+    </div>
     </div>
   </div>
   <!-- End your project here-->

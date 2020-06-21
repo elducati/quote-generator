@@ -1,25 +1,10 @@
-Material Design for Bootstrap
-Version: MDB FREE 4.19.0
+Quotation generator
+Version: 1
 
-Documentation:
-https://mdbootstrap.com/
+Displays random quotes when New Quote button is clicked.
+Technology:
+MDBootstrap
 
-Getting started:
-https://mdbootstrap.com/docs/jquery/getting-started/download/
-
-Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/education/bootstrap/
-MDB-Wordpress: https://mdbootstrap.com/education/wordpress/
-
-Templates:
-https://mdbootstrap.com/templates/
-
-License:
-https://mdbootstrap.com/general/license/
-
-Support:
-https://mdbootstrap.com/forums/forum/support/
-
-Contact:
-office@mdbootstrap.com
+Developer:
+Jeff
 
