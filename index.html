@@ -24,29 +24,33 @@
 
   <!-- Start your project here-->
   <div style="height: 100vh">
-    <div class="container border border-success rounded-pill flex-center flex-column">
+    <div class="container border border-success  flex-center flex-column">
       <h1 class="animated fadeIn mb-4">
         Quotation Generator</h1>
+        <h3>Popular Quote</h3>
       <div id="quote-display" class="border border-success">
+        
+
+      </div>
+      <h3>Nietzsche Quote</h3>
+      <div id="quote-display-1" class="border border-success">
+        
+
+      </div>
+      <h3>Morning Quote</h3>
+      <div id="quote-display-2" class="border border-success">
+        
 
       </div>
       <div class="container row">
-      <!--Dropdown primary-->
-      <div class="dropdown col-md-6">
-
-        <!--Trigger-->
-        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">Select Quote Category</button>
-
-
-        <!--Menu-->
-        <div class="dropdown-menu dropdown-primary">
-          <a class="dropdown-item" href="#">Nietzsche Quotes</a>
-          <a class="dropdown-item" href="#">Popular Quotes</a>
-          <a class="dropdown-item" href="#">Morning Quotes</a>          
+        <div class="col-md-6">
+        <select id="select" class="mdb-select md-form" onchange="newQuote()">
+          <option value="" disabled selected>Choose Quote Category</option>
+          <option value="Nietzsche">Nietzsche Quotes</option>
+          <option value="Morning">Morning Quotes</option>
+          <option value="Popular">Popular Quotes</option>
+        </select>
         </div>
-      </div>
-      <!--/Dropdown primary-->
       <div class="col-md-6"><button class="btn-success float-right" onclick="newQuote()">New Quote</button></div>
     </div>
     </div>
