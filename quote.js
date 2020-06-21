@@ -1,6 +1,7 @@
 
 const newQuote = () => {
-
+//declare a variable "quote" of type object
+//"quote" is an object comprising more objects
     let quote = {
         "popQuote": {
             "begin": ["The greatest glory in living",
@@ -62,16 +63,20 @@ const newQuote = () => {
                 "can bear almost any how.",
                 "makes us stronger."]
         }
+
     }
+    //use math.random to get a random number between 0 and 1 then multiply by the length of each section of the object 
     let morning = Math.random() * (quote.morningQuote.begin.length, quote.morningQuote.middle.length, quote.morningQuote.end.length);
     let popular = Math.random() * (quote.popQuote.begin.length, quote.popQuote.middle.length, quote.popQuote.end.length);
     let nietzsche = Math.random() * (quote.nietzscheQuote.begin.length, quote.nietzscheQuote.middle.length, quote.nietzscheQuote.end.length);
+    
+    //round off the result to the nearest integer value that is less than or equal to the random number
     let randomPopular = Math.floor(morning);
     let randomMorning = Math.floor(popular);
     let randomNietzsche = Math.floor(nietzsche);
 
     
-
+    //display the random quote per category in the html page onchange event in the dropdown list.
     let select = document.getElementById("select").value;
     if (select == "Nietzsche"){
         document.getElementById("quote-display-1").innerHTML = `${quote.nietzscheQuote.begin[randomNietzsche]} ${quote.nietzscheQuote.middle[randomNietzsche]} ${quote.nietzscheQuote.end[randomNietzsche]}`;
@@ -93,4 +98,4 @@ const newQuote = () => {
         document.getElementById("quote-display-2").hidden = true;
     }
 }
-newQuote();
+
