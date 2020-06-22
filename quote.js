@@ -79,23 +79,19 @@ const newQuote = () => {
     //display the random quote per category in the html page onchange event in the dropdown list.
     let select = document.getElementById("select").value;
     if (select == "Nietzsche"){
-        document.getElementById("quote-display-1").innerHTML = `${quote.nietzscheQuote.begin[randomNietzsche]} ${quote.nietzscheQuote.middle[randomNietzsche]} ${quote.nietzscheQuote.end[randomNietzsche]}`;
-        document.getElementById("quote-display").hidden = true;
-        document.getElementById("quote-display-2").hidden = true;
-        document.getElementById("quote-display-1").hidden = false;
+        document.getElementById("quote-display").innerHTML = `${quote.nietzscheQuote.begin[randomNietzsche]} ${quote.nietzscheQuote.middle[randomNietzsche]} ${quote.nietzscheQuote.end[randomNietzsche]}`;
+        document.getElementById("popQ").textContent = "Nietzsche Quotes";
         
     }
     else if(select == "Morning"){
-        document.getElementById("quote-display-2").innerHTML = `${quote.morningQuote.begin[randomMorning]} ${quote.morningQuote.middle[randomMorning]} ${quote.morningQuote.end[randomMorning]}`;
-        document.getElementById("quote-display-1").hidden = true;
-        document.getElementById("quote-display").hidden = true;
-        document.getElementById("quote-display-2").hidden = false;
+        document.getElementById("quote-display").innerHTML = `${quote.morningQuote.begin[randomMorning]} ${quote.morningQuote.middle[randomMorning]} ${quote.morningQuote.end[randomMorning]}`;
+        document.getElementById("popQ").textContent = "Morning Quotes";
+        
     }
     else if(select == "Popular"){
         document.getElementById("quote-display").innerHTML = `${quote.popQuote.begin[randomPopular]} ${quote.popQuote.middle[randomPopular]} ${quote.popQuote.end[randomPopular]}`;
-        document.getElementById("quote-display").hidden = false;
-        document.getElementById("quote-display-1").hidden = true;
-        document.getElementById("quote-display-2").hidden = true;
+        document.getElementById("popQ").textContent = "Popular Quotes";
+        
     }
 }
 

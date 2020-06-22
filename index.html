@@ -27,32 +27,23 @@
     <div class="container border border-success  flex-center flex-column">
       <h1 class="animated fadeIn mb-4">
         Quotation Generator</h1>
-        <h3>Popular Quote</h3>
+      <h3 id="popQ">Popular Quote</h3>
       <div id="quote-display" class="border border-success">
-        
+
 
       </div>
-      <h3>Nietzsche Quote</h3>
-      <div id="quote-display-1" class="border border-success">
-        
 
-      </div>
-      <h3>Morning Quote</h3>
-      <div id="quote-display-2" class="border border-success">
-        
-
-      </div>
       <div class="container row">
         <div class="col-md-6">
-        <select id="select" class="mdb-select md-form" onchange="newQuote()">
-          <option value="" disabled selected>Choose Quote Category</option>
-          <option value="Nietzsche">Nietzsche Quotes</option>
-          <option value="Morning">Morning Quotes</option>
-          <option value="Popular">Popular Quotes</option>
-        </select>
+          <select id="select" class="mdb-select md-form" onchange="newQuote()">
+            <option value="" disabled selected>Choose Quote Category</option>
+            <option value="Nietzsche">Nietzsche Quotes</option>
+            <option value="Morning">Morning Quotes</option>
+            <option value="Popular">Popular Quotes</option>
+          </select>
         </div>
-      <div class="col-md-6"><button class="btn-success float-right" onclick="newQuote()">New Quote</button></div>
-    </div>
+        <div class="col-md-6"><button class="btn-success float-right" onclick="newQuote()">New Quote</button></div>
+      </div>
     </div>
   </div>
   <!-- End your project here-->
