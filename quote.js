@@ -1,4 +1,3 @@
-
 function randomQuotePerCategory(quote, randomNietzsche, randomMorning, randomPopular) {
     let select = document.getElementById("select").value;
     if (select == "Nietzsche") {
