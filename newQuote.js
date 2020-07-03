@@ -71,4 +71,5 @@ const newQuote = () => {
 
     //display the random quote per category in the html page onchange event in the dropdown list.
     randomQuotePerCategory(quote, randomNietzsche, randomMorning, randomPopular);
+    
 };
