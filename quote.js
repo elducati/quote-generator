@@ -73,7 +73,7 @@ function randomQuotePerCategory(
 
     for (let i = 0; i <= select1 - 1; i++) {
 
-      statement += `"=>${popQuoteBegin[i]} ${popQuoteMiddle[i]} ${popQuoteEnd[i]}"\n`;
+      statement += `\u{00A9}"=>${popQuoteBegin[i]} ${popQuoteMiddle[i]} ${popQuoteEnd[i]}"\n`;
       if (select1 == 1) {
         document.getElementById("quote-display").innerHTML = statement;
 
