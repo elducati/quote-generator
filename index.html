@@ -34,13 +34,15 @@
       </div>
 
       <div class="container row">
-        <div class="col-md-6">
+        <div class="col-md-3">
           <select id="select" class="mdb-select md-form border-success" onchange="newQuote()">
             <option value="" disabled selected>Choose Quote Category</option>
             <option value="Nietzsche">Nietzsche Quotes</option>
             <option value="Morning">Morning Quotes</option>
             <option value="Popular">Popular Quotes</option>
           </select>
+        </div>
+        <div class="col-md-3">
           <select id="select-1" class="mdb-select md-form border-success" onchange="newQuote()">
             <option value="" disabled selected>Choose Number of Quotes</option>
             <option value=1>1</option>
@@ -50,7 +52,8 @@
             <option value=5>5</option>
           </select>
         </div>
-        <div class="col-md-6"><button class="btn-success float-right" onclick="newQuote()">New Quote</button><button class="btn-success float-right" onclick="location.reload()">Refresh</button></div>
+        <div class="col-md-3"><button class="btn-success" onclick="newQuote()">New Quote</button></div>
+        <div class="col-md-3"><button class="btn-success" onclick="location.reload()">Refresh</button></div>
       </div>
     </div>
   </div>
