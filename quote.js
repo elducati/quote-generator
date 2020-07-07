@@ -39,7 +39,7 @@ function randomQuotePerCategory(
   function numberOfPopularQuote(popQuoteBegin, popQuoteMiddle, popQuoteEnd) {
     for (let i = 0; i <= select1 - 1; i++) {
 
-      statement += `"=>${popQuoteBegin[i]} ${popQuoteMiddle[i]} ${popQuoteEnd[i]}"\n`;
+      statement += `${i + 1}. "${popQuoteBegin[i]} ${popQuoteMiddle[i]} ${popQuoteEnd[i]}"<br/>`;
       if (select1 == 1) {
         document.getElementById("quote-display").innerHTML = statement;
 
@@ -62,7 +62,7 @@ function randomQuotePerCategory(
   function numberOfMorningQuote(morningQuoteBegin, morningQuoteMiddle, morningQuoteEnd) {
     for (let i = 0; i <= select1 - 1; i++) {
 
-      statement += `"=>${morningQuoteBegin[i]} ${morningQuoteMiddle[i]} ${morningQuoteEnd[i]}"\n`;
+      statement += `${i + 1}. "${morningQuoteBegin[i]} ${morningQuoteMiddle[i]} ${morningQuoteEnd[i]}"<br/>`;
       if (select1 == 1) {
         document.getElementById("quote-display").innerHTML = statement;
 
@@ -85,7 +85,7 @@ function randomQuotePerCategory(
   function numberOfNietzscheQuote(nietzscheQuoteBegin, nietzscheQuoteMiddle, nietzscheQuoteEnd) {
     for (let i = 0; i <= select1 - 1; i++) {
 
-      statement += `"=>${nietzscheQuoteBegin[i]} ${nietzscheQuoteMiddle[i]} ${nietzscheQuoteEnd[i]}"\n`;
+      statement += `${i + 1}. "${nietzscheQuoteBegin[i]} ${nietzscheQuoteMiddle[i]} ${nietzscheQuoteEnd[i]}"<br/>`;
       if (select1 == 1) {
         document.getElementById("quote-display").innerHTML = statement;
 
