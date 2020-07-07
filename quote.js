@@ -28,57 +28,30 @@ function randomQuotePerCategory(
     const popQuoteBegin = quote.popQuote.begin;
     const popQuoteMiddle = quote.popQuote.middle;
     const popQuoteEnd = quote.popQuote.end;
+    
+    document.getElementById("popQ").textContent = "Popular Quotes";
     document.getElementById(
       "quote-display"
     ).innerHTML = `${popQuoteBegin[randomPopular]} ${popQuoteMiddle[randomPopular]} ${popQuoteEnd[randomPopular]}`;
-    document.getElementById("popQ").textContent = "Popular Quotes";
-
     numberOfPopularQuote(popQuoteBegin, popQuoteMiddle, popQuoteEnd);
+    
   }
 
   function numberOfPopularQuote(popQuoteBegin, popQuoteMiddle, popQuoteEnd) {
+    
     for (let i = 0; i <= select1 - 1; i++) {
 
       statement += `${i + 1}. "${popQuoteBegin[i]} ${popQuoteMiddle[i]} ${popQuoteEnd[i]}"<br/>`;
-      if (select1 == 1) {
-        document.getElementById("quote-display").innerHTML = statement;
-
-      }
-      else if (select1 == 2) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 3) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 4) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 5) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
+      document.getElementById("quote-display").innerHTML = statement;
     }
+    
   }
 
   function numberOfMorningQuote(morningQuoteBegin, morningQuoteMiddle, morningQuoteEnd) {
     for (let i = 0; i <= select1 - 1; i++) {
 
       statement += `${i + 1}. "${morningQuoteBegin[i]} ${morningQuoteMiddle[i]} ${morningQuoteEnd[i]}"<br/>`;
-      if (select1 == 1) {
-        document.getElementById("quote-display").innerHTML = statement;
-
-      }
-      else if (select1 == 2) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 3) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 4) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 5) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
+      document.getElementById("quote-display").innerHTML = statement;
     }
   }
 
@@ -86,22 +59,7 @@ function randomQuotePerCategory(
     for (let i = 0; i <= select1 - 1; i++) {
 
       statement += `${i + 1}. "${nietzscheQuoteBegin[i]} ${nietzscheQuoteMiddle[i]} ${nietzscheQuoteEnd[i]}"<br/>`;
-      if (select1 == 1) {
-        document.getElementById("quote-display").innerHTML = statement;
-
-      }
-      else if (select1 == 2) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 3) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 4) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
-      else if (select1 == 5) {
-        document.getElementById("quote-display").innerHTML = statement;
-      }
+      document.getElementById("quote-display").innerHTML = statement;
     }
   }
 }
