@@ -27,7 +27,7 @@
     <div class="container border border-success  flex-center flex-column">
       <h1 class="animated fadeIn mb-4">
         Quotation Generator</h1>
-      <h3 id="popQ"></h3>
+      <h3 id="quote-heading"></h3>
       <div id="quote-display" class="border border-success">
 
 
@@ -35,7 +35,7 @@
 
       <div class="container row">
         <div class="col-md-3">
-          <select id="select" class="mdb-select md-form border-success" onchange="newQuote()">
+          <select id="category" class="mdb-select md-form border-success" onchange="newQuote()">
             <option value="" disabled selected>Choose Quote Category</option>
             <option value="Nietzsche">Nietzsche Quotes</option>
             <option value="Morning">Morning Quotes</option>
@@ -43,7 +43,7 @@
           </select>
         </div>
         <div class="col-md-3">
-          <select id="select-1" class="mdb-select md-form border-success" onchange="newQuote()">
+          <select id="num-of-quotes" class="mdb-select md-form border-success" onchange="newQuote()">
             <option value="" disabled selected>Choose Number of Quotes</option>
             <option value=1>1</option>
             <option value=2>2</option>
