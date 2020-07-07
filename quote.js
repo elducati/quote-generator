@@ -28,23 +28,23 @@ function randomQuotePerCategory(
     const popQuoteBegin = quote.popQuote.begin;
     const popQuoteMiddle = quote.popQuote.middle;
     const popQuoteEnd = quote.popQuote.end;
-    
+
     document.getElementById("quote-heading").textContent = "Popular Quotes";
     document.getElementById(
       "quote-display"
     ).innerHTML = `${popQuoteBegin[randomPopular]} ${popQuoteMiddle[randomPopular]} ${popQuoteEnd[randomPopular]}`;
     numberOfPopularQuote(popQuoteBegin, popQuoteMiddle, popQuoteEnd);
-    
+
   }
 
   function numberOfPopularQuote(popQuoteBegin, popQuoteMiddle, popQuoteEnd) {
-    
+
     for (let i = 0; i <= numOfQuotes - 1; i++) {
 
       statement += `${i + 1}. "${popQuoteBegin[i]} ${popQuoteMiddle[i]} ${popQuoteEnd[i]}"<br/>`;
       document.getElementById("quote-display").innerHTML = statement;
     }
-    
+
   }
 
   function numberOfMorningQuote(morningQuoteBegin, morningQuoteMiddle, morningQuoteEnd) {
